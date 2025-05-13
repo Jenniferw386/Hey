@@ -15,6 +15,9 @@
 .click:active {
     transform: scale(0.8);
 }
+button {
+    cursor: pointer;
+}
 
 /* LANDING PAGE*/
 
@@ -72,6 +75,51 @@ margin-top: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.mail__button {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: grey;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+}
+
+.scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.scroll__icon {
+    width: 20px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll__icon:after {
+    content: "";
+    background-color: gray;
+    width: 4px;
+    height: 6px;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
 }
 /* NAVIGATION */
 
