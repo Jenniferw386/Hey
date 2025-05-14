@@ -7,6 +7,7 @@
 }
 .click {
     transition: all 300ms ease;
+    cursor: pointer;
 }
 .click:hover {
     transform: scale(1.1);
@@ -18,7 +19,14 @@
 button {
     cursor: pointer;
 }
-
+.purp {
+    color: #008080;
+    font-weight: bold;
+}
+.purp1 {
+    font-weight: bold;
+    color: #006464;
+}
 /* LANDING PAGE*/
 
 section {
@@ -47,11 +55,7 @@ line-height: 1.5;
 margin-bottom: 20px;
  color: 	#008080;
 }
-.purp {
- color: #008080;
- font-weight: bold;
 
-}
 .about__me {
     font-size: 24px;
     line-height: 1.8;
@@ -149,10 +153,194 @@ li {
 .nav__link--anchor {
     text-decoration: none;
     font-size: 16px;
-    color: 	#008080;
+    color: black;
     font-weight: bold;
 }
+/* MODAL*/
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 1100px;
+    height: 700px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+.modal__half {
+    width: 50%;
+ padding: 40px 72px;
+ position: relative;
+}
+.modal__about {
+    background-color: rgb(155, 154, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.modal__contact {
+    background-color: #242424;
+    color: white;
+}
+.modal__languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__lang {
+    width: 33%;
+   padding: 20px 10px ;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: all 300ms ease;
+}
+.lang__img {
+    width: 100%;
+}
+.css__lang,
+.html__lang {
+    padding-top: 5px;
+    margin-bottom: 7px;
+
+}
+.modal__text--about {
+    text-align: center;
+    padding: 10px 0;
+}
+.modal__sub--about {
+    text-align: center;
+    padding: 10px 0;
+}
+.modal__title--about {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.modal__lang:hover {
+    filter: brightness(80%);
+    transform: scale(0.9);
+}
+
+.modal__lang:hover .lang__name {
+    transform: scale(1);
+}
+.lang__name {
+    position: absolute;
+    bottom: -10px;
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: #fff;
+    outline: none;
+    border: 3px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+
+}
+input:hover , textarea:hover {
+    border-color: #a9a9a9;
+}
+input:focus, textarea:focus {
+    border-color: #006464;
+}
+textarea {
+    margin-top: 12px;
+    resize: vertical;
+    height: 100px;
+}
+label {
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.form__item {
+    margin-bottom: 20px;
+ 
+}
+.modal__title--contact {
+ text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.modal__sub--contact {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form__button {
+    background-color: #006464;
+    border: 2px solid #006464;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+  
+
+}
+.form__button:hover {
+    border-color: white;
+    background-color: transparent;
+    transition: all 300ms ease;
+}
+.form__button:active {
+    border-color: #006464;
+    color: #006464;
+}
+.modal__overlay--loading {
+background-color: #006464;
+
+font-size: 80px;
+z-index: -1;
+}
+.fa-spinner{
+animation: rotate 750ms infinite linear;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.modal__overlay {
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.overlay--success {
+background-color: #638b04;
+font-size: 42px;
+text-align: center;
+padding: 28px;
+
+}
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    z-index: 100;
+}
 /* PROJECTS */
 
 .container {
@@ -259,4 +447,31 @@ align-items: center;
 .footer__logo {
 width: 100px;
 padding: 15px;
+}
+
+/* ANIMATIONS */
+
+.link__hover-effect {
+position: relative;
+}
+.link__hover-effect::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    background-color: black;
+    right: 0;
+    transition: all 300ms ease;
+}
+.link__hover-effect--white::after {
+    background-color: white;
+}
+
+.link__hover-effect--black::after {
+    background-color: black;
+}
+.link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
 }

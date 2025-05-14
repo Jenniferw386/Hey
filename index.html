@@ -11,32 +11,30 @@
 <script src="https://kit.fontawesome.com/e200ebec90.js" crossorigin="anonymous"></script>
     <script src="app.js" defer></script>
 </head>
-
-
-
 <body>
 <section id="landing">
-
-
-
-
-
-
-
 <nav>
 <img src="./assets/jw-removebg-preview.png" class="logo">
 <ul class="nav__link--list">
-<li class="nav__link">
+<li class="nav__link
+link__hover-effect
+link__hover-effect--black ">
     <a href="#" class="nav__link--anchor">About</a>
 </li>
-<li class="nav__link">
+<li class="nav__link
+link__hover-effect
+link__hover-effect--black ">
     <a href="#" class="nav__link--anchor">Projects</a>
 </li>
-<li class="nav__link">
+<li class="nav__link
+link__hover-effect
+link__hover-effect--black ">
     <a href="#" class="nav__link--anchor">Contact</a>
 </li>
 </li>
-<li class="nav__link">
+<li class="nav__link
+link__hover-effect
+link__hover-effect--black ">
     </li>
     <i class="fa-solid fa-circle-half-stroke"></i>
 </li>
@@ -61,6 +59,54 @@ in training with a passion for building responsive web applications with great u
 <a href="#projects" class="scroll">
     <div class="scroll__icon click"></div>
 </a>
+<div class="modal">
+    <div class="modal__half modal__about">
+        <h3 class="modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub--about">Frontend Software Engineer.</h4>
+        <p class="modal__text--about">
+            I am a <b class="purp1">highly motivated</b> and creative frontend software engineer with a <b class="purp1">passion for building</b> responsive web applications with <b class="purp1">great user experiences!</b>
+        </p>
+        <p class="modal__text--about">I'm a dedicated <b class="purp1">problem solver</b> who aspires to work with and learn from a team consisting of some of the most <b class="purp1">talented</b> and <b class="purp1">experienced</b> software engineers. </p>
+        <div class="modal__languages">
+            <figure class="modal__lang">
+                <img src="./assets/html-icon.png" class="lang__img html__lang" alt="">
+           <span class="lang__name">HTML</span>
+            </figure>
+              <figure class="modal__lang">
+                <img src="./assets/css-icon.png" class="lang__img css__lang" alt="">
+           <span class="lang__name">CSS</span>
+            </figure>
+              <figure class="modal__lang">
+                <img src="./assets/java.png" class="lang__img java__lang" alt="">
+           <span class="lang__name">JAVA</span>
+            </figure>
+        </div>
+    </div>
+    <div class="modal__half modal__contact">
+        <h3 class="modal__title--contact">Let's chat!</h3>
+        <h4 class="modal__sub--contact">I'm an opprotunist.</h4>
+        <form action="" id="form">
+            <div class="form__item">
+                <label class="form__label" for="name">Name</label>
+                <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="email">E-mail</label>
+                <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+                <label class="form__label" for="message">Message</label>
+                <textarea class="input" name="message" type="text" placeholder="Can't wait to hear from you!" required></textarea>
+            </div>
+            <button id="submit" class="form__button">Send it my way</button>
+        </form>
+    <div class="modal__overlay modal__overlay--loading">
+        <i class="fas fa-spinner"></i>
+    </div>
+    <div class="modal__overlay overlay--success">Thanks for reaching out. <br> Look forward to speaking to you soon!</div>
+    </div>
+    <i class="fas fa-times modal__exit click"></i>
+</div>
 </section>
 <section class="projects">
     <div class="container">
@@ -115,19 +161,27 @@ HTML, CSS & JAVASCRIPT
         <img src="./assets/jw-removebg-previewwhite.png" class="footer__logo" alt="">
     <div class="footer__list">
         <a href="#" class="
-        footer__link">
+        footer__link
+        link__hover-effect
+        link__hover-effect--white">
         GitHub
         </a>
          <a href="#" class="
-        footer__link">
+        footer__link
+        link__hover-effect
+        link__hover-effect--white">
         LinkedIn
         </a>
          <a href="#" class="
-        footer__link">
+        footer__link
+        link__hover-effect
+        link__hover-effect--white">
         Contact
         </a>
          <a href="#" class="
-        footer__link">
+        footer__link
+        link__hover-effect
+        link__hover-effect--white">
         Resume
         </a>
     </div>
