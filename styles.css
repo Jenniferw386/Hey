@@ -540,3 +540,39 @@ position: relative;
     left: 0;
     width: 100%;
 }
+/* DRAWINGS*/
+
+.shape {
+    position: fixed;
+}
+.shape_2{
+    height: 150px;
+    top: 85vh;
+    left: 5vw;
+}
+
+.shape_4 {
+    height: 80px;
+top: 15vh;
+left: 85vw;
+}
+.shape_3 {
+    height: 250px;
+    top: 55vh;
+    left: 75vw;
+}
+.shape_1 {
+    height: 100px;
+    top: 80vh;
+    left: 35vw;
+}
+.shape_5 {
+    height: 110px;
+    top: 10vh;
+    left: 40vw;
+}
+.shape_6 {
+    height: 120px;
+    top: 40vh;
+    left: 60vw;
+}
