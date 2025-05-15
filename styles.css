@@ -5,6 +5,9 @@
      font-family: "Reem Kufi", sans-serif;
 
 }
+html {
+    scroll-behavior: smooth;
+}
 .click {
     transition: all 300ms ease;
     cursor: pointer;
@@ -563,7 +566,7 @@ left: 85vw;
 }
 .shape_1 {
     height: 100px;
-    top: 80vh;
+    top: 70vh;
     left: 35vw;
 }
 .shape_5 {
@@ -575,4 +578,40 @@ left: 85vw;
     height: 120px;
     top: 40vh;
     left: 60vw;
+}
+
+@media (max-width: 768px){
+    .hey {
+        font-size: 80px;
+    
+    }
+    .jenn {
+        font-size: 80px;
+    }
+    .about__me {
+        font-size: 20px;
+    }
+    footer {
+        position: relative;
+    }
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+       
+    }
+    .modal__half {
+        width: 100%;
+    }
+    .modal--open .project__wrapper{
+        filter: blur(5px);
+  opacity: 0.7;
+       
+
+
+    }
 }
