@@ -2,6 +2,23 @@
 //service_5qg5ngh
 //4k8_T225bAJgNZ9FV
 
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
+
+
+
+
 function contact(event) {
     event.preventDefault();
     const sucesss = document.querySelector('.overlay--success')

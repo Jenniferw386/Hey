@@ -31,6 +31,7 @@ button {
 
 section {
     background-color: rgb(208, 208, 208);
+    transition: all 300ms ease;
 }
 
 #landing {
@@ -86,10 +87,11 @@ margin-top: 12px;
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: grey;
+    background-color: #151515;
     position: absolute;
     bottom: 32px;
     right: 40px;
+  color: white;
 }
 
 .scroll {
@@ -155,6 +157,31 @@ li {
     font-size: 16px;
     color: black;
     font-weight: bold;
+}
+
+/* DARK MODE */
+.dark-theme .section__title,
+.dark-theme .nav__link--anchor,
+.dark-theme .hey,
+.dark-theme .about__me,
+.dark-theme .fa-solid
+{
+    color: white;
+}
+.dark-theme section {
+    background-color: #151515;
+}
+.dark-theme .logo {
+    filter: invert();
+}
+.dark-theme .scroll__icon{
+    border-color: white;
+}
+.dark-theme .mail__button,
+.dark-theme .link__hover-effect--black:after
+{
+    background-color: #008080;
+ 
 }
 /* MODAL*/
 .modal {
@@ -455,7 +482,7 @@ margin: 16px 0;
 /* FOOTER */
 
 footer {
-    background-color: #242424;
+    background-color: #151515;
     display: flex;
 }
 .footer__row {
